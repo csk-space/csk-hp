@@ -1,0 +1,892 @@
+﻿/*---全ページ共通スタイル---*/
+
+/* IMPORT RESET */
+@import url("reset.css");
+
+/* IMPORT 12 COLUMN RESPONSIVE GS */
+@import url("responsive.gs.12col.css");
+
+/* fontサイズ調整 */
+html {
+  font-size: 100%;
+ 
+/* 600px以降から、100pxごとに1px大きくなる */
+  @media (min-width: 600px) {
+    font-size: calc(112.5% + 4 * (100vw - 600px) / 400)
+  }
+ 
+/* 1,000px以上は、22pxに */
+  @media (min-width: 1000px) {
+    font-size: calc(137.5%)
+  }
+}
+
+body,td,th{
+	font-family: "メイリオ", "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3"; 
+	color: #333333;
+}
+
+a:link {
+	color: #5A7F00;
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #5A7F00;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #94B541;
+}
+
+a:active {
+	text-decoration: none;
+	color: #5A7F00;
+}
+
+img {
+	border:none ;
+}
+
+h1 {
+	font-size: 0.79em;
+	color: #5A7F00;
+	padding: 0 5px;
+}
+
+h2 {
+    font-size: 1em;
+	color: #FFF;
+	background-color:#8eb92a;
+	margin: 2px 0 5px;
+	padding: 3px 5px;
+	font-weight:bold;
+	
+}
+
+h3 {
+    font-size: 20px;
+    font-weight:bold;
+}
+
+p  {
+    font-size: 0.85em;
+/*  font-weight:bold;*/
+    line-height:1.5em;
+    padding:0px;
+}
+
+li {
+    font-size: 0.9em;
+/*    font-weight:bold;*/
+}
+
+table {
+/*　border-collapse:collapse;resetにある */
+	margin-left : auto ;
+	margin-right : auto ;
+	font-size: 0.9em;
+/*  font-weight:bold;*/
+    line-height:1.8em;
+    padding:0px;
+
+}
+
+table th {
+	background-color: #EAF4C9;
+	border: 1px  #5A7F00 solid;
+	color: #333333;
+	padding: 4px 8px;
+	text-align: center;
+	width: 100px;
+}
+
+table td {
+	border: 1px #5A7F00 solid;
+	padding: 4px 8px;
+}
+
+header {
+	line-height: 1em;
+	text-align: center;
+	background: #FFF;
+}
+
+article {
+	line-height: 2em;
+	text-align: center;
+	padding: 0 5px;
+/*	background: #FFF;*/
+}
+
+aside {
+	line-height: 2.5em;
+	text-align: center;
+/*	background: #EAF4C9;*/
+}
+
+aside li {
+	font-size: 1em;
+}
+
+footer {
+	line-height: 2em;
+	text-align: center;
+	background: #FFF;
+	font-size: 1em;
+}
+
+/*-- 全ページ共通　class style --*/
+
+/*- 画像回り込み（左右） -*/
+.float_left {
+    float: left;
+    margin-right: 1em;
+}
+
+.float_right {
+    float: right;
+    margin-left: 1em;
+}
+
+/*- 画像回り込み（左右）の解除-*/
+.float_clear {
+         clear: both;
+}
+/*- 画像回り込み（左右） 解除　fin-*/
+
+/*-- header class style --*/
+.header_bk {
+	background-image:url('../images/header_sp.jpg');
+	background-repeat:repeat-x;
+	background-position:center bottom;
+	text-align:center;
+	float:left;
+	margin:auto;
+	width:100%
+}
+
+.div_header_img_logo {
+	text-align:left;
+	margin:0px;
+    float: left;
+    height:4em;
+}
+
+.float_right_top {
+    text-align:right;
+    margin:0px;
+    float:right;
+    margin-left: 4em;
+}
+ 
+.float_clear_top {
+    clear: both;
+}
+
+.header_redfont1 {
+	padding-top:0.3em;
+	color:#CC0000;
+	font-size: 1em;
+	text-align:right;
+	line-height:1em;
+}
+
+/*.header_redfont2 {
+	color:#CC0000;
+	font-size: 0.8em;
+	line-height:1em;
+	text-align:right;
+	padding-top:0px;
+	margin-top:0px;
+}
+
+/*der_taiken{
+	font-size: 1em;
+	color: #FFF;
+	background-color:#8eb92a;
+	border-radius: 5px;
+	text-align:center;
+	width:150px;
+	margin-left: auto;
+	line-height:1.2em;
+}
+
+/*-- header class style fin --*/
+
+/*-- article class style --*/
+/* パン屑リスト */
+/* [ul] */
+.brcb {
+	overflow: hidden ;
+	list-style-type: none ;
+	margin:0px;
+	padding:0px;
+}
+
+/* [li] */
+.brcb li {
+	float: left ;
+/*	font-weight: 600 ; */
+}
+
+/* [>] */
+.brcb li:after {
+	content: ">" ;
+	padding: 0px ;
+/*	font-weight: 400 ; */
+}
+
+/* 一番最後の[li] */
+.brcb li:last-child:after {
+	content: none ;
+}
+/* パン屑リスト　終了 */
+
+/* h2の色の部分 */
+
+.h2_top{
+	background-color:#FFFFFF;
+	color:#8eb92a;
+	font-weight:800;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	text-align:center;
+}
+
+/* h2の色の部分　終了*/
+
+/*-- aside class style --*/
+.sidebar {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8eb92a+0,b4d173+36,72aa00+58,72aa00+99 */
+	background: #8eb9S2a; /* Old browsers */
+	background: -moz-linear-gradient(top, #8eb92a 0%, #b4d173 36%, #72aa00 58%, #72aa00 99%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #8eb92a 0%,#b4d173 36%,#72aa00 58%,#72aa00 99%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #8eb92a 0%,#b4d173 36%,#72aa00 58%,#72aa00 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8eb92a', endColorstr='#72aa00',GradientType=0 ); /* IE6-9 */
+	text-align: center; 
+}
+
+.sidebar a:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.sidebar a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.sidebar a:hover {
+	color: #FFF000;
+	text-decoration: none;
+}
+
+.sidebar a:active {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.li_orenge {
+	background-color: #EF9300;
+	text-align: center; 
+}
+
+.li_orenge a:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.li_orenge a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.li_orenge a:hover {
+	color: #FFF000;
+	text-decoration: none;
+}
+
+.li_orenge a:active {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.li_red{
+	background-color: #C11A22 ;
+	text-align: center; 
+}
+
+.li_red a:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.li_red a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.li_red a:hover {
+	color: #FFF000;
+	text-decoration: none;
+}
+
+.li_red a:active {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.li_green{
+	background-color:#8eb92a;
+	text-align: center; 
+}
+
+.li_green a:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.li_green a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.li_green a:hover {
+	color: #FFF000;
+	text-decoration: none;
+}
+
+.li_green a:active {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.li_blue {
+	background-color:#0060B6;
+	text-align: center; 
+}
+
+.li_blue a:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.li_blue a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.li_blue a:hover {
+	color: #FFF000;
+	text-decoration: none;
+}
+
+.li_blue a:active {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.li_yellow{
+	background-color:#F4D321;
+	text-align: center; 
+}
+
+.li_yellow a:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.li_yellow a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.li_yellow a:hover {
+	color: #FFF000;
+	text-decoration: none;
+}
+
+.li_yellow a:active {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.li_paleblue{
+	background-color:#6A97DA;
+	text-align: center; 
+}
+
+.li_paleblue a:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.li_paleblue a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.li_paleblue a:hover {
+	color: #FFF000;
+	text-decoration: none;
+}
+
+.li_paleblue a:active {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+/*-- aside class style fin --*/
+
+/*-- footer class style --*/
+.footer1 {
+/*	font-size: 9px;*/
+	color: #5A7F00;
+	text-align:center;
+}
+
+.footer2 {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8eb92a+0,b4d173+36,72aa00+58,72aa00+99 */
+	background: #8eb92a; /* Old browsers */
+	background: -moz-linear-gradient(top, #8eb92a 0%, #b4d173 36%, #72aa00 58%, #72aa00 99%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #8eb92a 0%,#b4d173 36%,#72aa00 58%,#72aa00 99%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #8eb92a 0%,#b4d173 36%,#72aa00 58%,#72aa00 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8eb92a', endColorstr='#72aa00',GradientType=0 ); /* IE6-9 */
+	color: #FFF;
+/*	font-size: 9px;*/
+	text-align:center;
+}
+
+.footer2 a:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.footer2 a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.footer2 a:hover {
+	color: #FFF000;
+	text-decoration: none;
+}
+
+.footer2 a:active {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+
+/*-- footer class style fin --*/
+
+/*- index.html class -*/
+.boxContainer {
+	display: flex;
+	display: -moz-flex;
+	display: -o-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+	-moz-flex-direction: row;
+	-o-flex-direction: row;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	/*max-width: 500px;*/
+  	margin: 0 auto;
+}
+
+.miryoku{
+/*	border:1px #E4E4E4 solid;*/
+	margin-top:5px;
+	margin-bottom:5px;
+	text-align:center;
+	width:300px;
+	
+}
+
+.p_miryoku{
+	text-align:center;
+	font-size:0.84em;
+}
+
+/*- 各ページ詳細へのリンク -*/
+.p_detail {
+	padding-top:5px;
+	font-size: 0.9em;
+	text-align:right;
+	margin:10px　0px;	
+}
+
+span.p_detail{
+	border-bottom: dotted 2px #8eb92a;
+	font-weight:bold;
+}
+/*- 各ページ詳細へのリンク fin -*/
+
+.topround{
+	max-width:110px;
+	height:auto;
+}
+
+.h3_top{
+	font-family:"A-OTF 新ゴ Pro B";
+	text-align:center;
+}
+
+.h3_top_green{
+	color:#8eb92a;
+}
+
+.h3_top_red{
+	color:#C11A22;
+}
+
+.h3_top_orange{
+	color:#EF9300;
+}
+
+.h3_top_blue{
+	color:#0060B6;
+}
+
+.h3_top_yellow{
+	color:#F4D321;
+}
+
+.h3_top_paleblue{
+	color:#6A97DA;
+}
+
+/*-　トップページキャンペーン告知style -*/
+.campaign{
+	color:#FF6699;
+	font-size:1.2em;
+	text-align:center;
+	font-weight:bold;
+}
+
+/*-　トップページキャンペーン告知style fin -*/
+
+/*-　newsスクロール用 class -*/
+.news {
+	width: 100%;
+	height: 100px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	border: 1px black dotted	
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+
+/*- googlemap responsive対応 class -*/
+.ggmap {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	text-align:center
+}
+ 
+.ggmap iframe,
+.ggmap object,
+.ggmap embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*- index.html class fin -*/
+
+/*- miryoku.html class -*/
+
+.p_jikanwari{
+	margin-top:5px;
+	margin-bottom:5px;
+	text-align:center;
+	font-size:0.9em;
+	font-weight:bold;
+}
+
+/*- miryoku.html class fin-*/
+/*- course.html class -*/
+
+.p-coursename{
+    font-size:20px;
+    font-weight:bold;
+    text-align:center;
+   	margin: 0px;
+	padding: 0px;
+}
+
+.p_red{
+	color:#C11A22;
+}
+
+.p_orange{
+	color:#EF9300;
+}
+
+.p_green{
+	color:#8eb92a;
+}
+
+.p_blue{
+	color:#0060B6;
+}
+
+.p_yellow{
+	color:#F4D321;
+}
+
+.p_paleblue{
+	color:#6A97DA;
+}
+
+.h2_red{
+	background-color:#C11A22;
+}
+
+.h2_orange{
+	background-color:#EF9300;
+}
+
+.h2_blue{
+	background-color:#0060B6;
+}
+
+.h2_yellow{
+	background-color:#F4D321;
+	color:#3F3F3F
+}
+
+.h2_paleblue{
+	background-color:#6A97DA;
+}
+
+.h3_coursintro{
+	color:#FFFFFF;
+    font-size:16px;
+    font-weight:bold;
+    text-align:center;
+   	margin: 0px;
+	padding: 0px;
+	border-radius: 10px;
+    -webkit-border-radius: 10px;/* for Safari and Chrome 対応*/
+    -moz-border-radius: 10px;/* for Firefox 対応*/
+    border:#FFFFFF double medium;
+}
+
+.p_shosai{
+	color:#FFFFFF;
+    font-size:16px;
+    font-weight:bold;
+    text-align:center;
+    margin: 1em;
+	padding: 1px;
+	border-radius: 10px;
+    -webkit-border-radius: 10px;/* for Safari and Chrome 対応*/
+    -moz-border-radius: 10px;/* for Firefox 対応*/
+    border:#FFFFFF double medium;
+    width:300px;
+}
+
+.p_shosai a:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.p_shosai a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.p_shosai a:hover {
+	color: #FFF000;
+	text-decoration: none;
+}
+
+.p_shosai a:active {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+
+.h3_red{
+	background-color:#C11A22;
+}
+
+.h3_orange{
+	background-color:#EF9300;
+}
+
+.h3_green{
+	background-color:#8eb92a;
+}
+
+.h3_blue{
+	background-color:#0060B6;
+}
+
+.h3_yellow{
+	background-color:#F4D321;
+	color:#3F3F3F
+}
+
+.h3_paleblue{
+	background-color:#6A97DA;
+}
+
+.boxContainer_course {
+	display: flex;
+	display: -moz-flex;
+	display: -o-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	flex-direction: row;
+	-moz-flex-direction: row;
+	-o-flex-direction: row;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-wrap:wrap;
+	-webkit-flex-wrap: wrap; /* Safari */
+	justify-content: space-around;
+	/*max-width: 500px;*/
+	margin:0px;
+}
+
+.div_course {
+	border:none;
+	margin-top:5px;
+	margin-bottom:10px;
+	text-align:center;
+	width:275px;
+}
+
+.ul_list_1 {
+	list-style-type:none;
+}
+
+.ul_list_1 li {
+	font-size:80%;
+	padding-left:30px;
+	background-image:url('../images/list01.gif');
+	background-repeat:no-repeat;
+	background-position:12px 8px;
+	margin-top:-5px;
+	margin-bottom:-5px;
+}
+
+.ul_list_2{
+	list-style-type:none;
+}
+
+.ul_list_2 li{
+	font-size:80%;
+	padding-left:30px;
+	background-image:url('../images/list02.gif');
+	background-repeat:no-repeat;
+	background-position:12px 8px;
+	margin-top:-5px;
+	margin-bottom:-5px;
+}
+
+/*- course_nyumon.html class -*/
+
+p.coursesetsumei {
+	font-size:80%;
+	padding-bottom:5px;
+}
+
+p.coursesetsumei_2 {
+	font-size:80%;
+	color:#C11A22;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.ul_list_course {
+	list-style-type:none;
+}
+.ul_list_course li {
+	font-size:80%;
+	padding-left:30px;
+	background-image:url('../images/icon.jpg');
+	background-repeat:no-repeat;
+	background-position:12px 8px;
+	margin-top:-5px;
+	margin-bottom:-5px;
+}
+/*- course_nyumon.html class fin -*/
+
+/*- faq.html class -*/
+.ul_list_faq1 li {
+	font-size:80%;
+	padding-top:7px;
+	padding-left:50px;
+	background-image:url('../images/q.jpg');
+	background-repeat:no-repeat;
+	background-position:12px 6px;
+	margin-left:1px;
+}
+
+
+.ul_list_faq2 li {
+	font-size:80%;
+	padding-top:7px;
+	padding-left:50px;
+	background-image:url('../images/a.jpg');
+	background-repeat:no-repeat;
+	background-position:12px 6px;
+	margin-left:1px;
+	margin-bottom:10px;
+	line-height:1.5em;
+}
+/*- faq.html class fin -*/
+
+/*- flow.html class -*/
+.div_flow{
+	text-align:center;
+	margin-top:5px;
+}
+
+.h3_flow{
+	color:#FFFFFF;
+    font-size:16px;
+    font-weight:bold;
+    text-align:center;
+   	margin: auto;
+	padding: 0px;
+	border-radius: 10px;
+    -webkit-border-radius: 10px;/* for Safari and Chrome 対応*/
+    -moz-border-radius: 10px;/* for Firefox 対応*/
+    border:#FFFFFF double medium;
+    width:70%;
+}
+
+
+/*- flow.html class fin -*/
+p.flowsetsumei {
+	font-size:80%;
+	padding-top:5px;
+	padding-bottom:5px;
+	text-align:left;
+}

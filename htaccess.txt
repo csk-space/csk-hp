@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^merit/index.html$ http://curio-kikukawa.main.jp/miryoku.html [R=301,L] 
