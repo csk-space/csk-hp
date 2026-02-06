@@ -1,0 +1,7 @@
+RewriteEngine on
+
+RewriteCond %{THE_REQUEST} ^.*/index.html
+RewriteRule ^(.*)index.html$ http://curio-kikukawa.net/$1 [R=301,L]
+
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://curio-kikukawa.net/$1 [R=301,L]

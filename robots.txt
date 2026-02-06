@@ -1,1 +1,1 @@
-Sitemap:http://curio-kikukawa.main.jp/sitemap.xml
+Sitemap: https://curio-kikukawa.net/sitemap.xml

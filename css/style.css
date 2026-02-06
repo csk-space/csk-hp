@@ -438,6 +438,32 @@ footer {
 	color: #FFFFFF;
 	text-decoration: none;
 }
+
+.li_line{
+	background-color:#00B900;
+	text-align: center; 
+}
+
+.li_line a:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.li_line a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.li_line a:hover {
+	color: #FFF000;
+	text-decoration: none;
+}
+
+.li_line a:active {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
 /*-- aside class style fin --*/
 
 /*-- footer class style --*/
@@ -561,6 +587,10 @@ span.p_detail{
 	color:#6A97DA;
 }
 
+.h3_top_line{
+	color:#00B900;
+}
+
 /*-　トップページキャンペーン告知style -*/
 .campaign{
 	color:#FF6699;
@@ -682,6 +712,9 @@ span.p_detail{
 	background-color:#6A97DA;
 }
 
+.h2_line{
+	background-color:#00B900;
+}
 .h3_coursintro{
 	color:#FFFFFF;
     font-size:16px;
