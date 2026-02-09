@@ -1,4 +1,4 @@
-﻿/*---全ページ共通スタイル---*/
+/*---全ページ共通スタイル---*/
 
 /* IMPORT RESET */
 @import url("reset.css");
@@ -416,7 +416,12 @@ footer {
 
 .li_paleblue{
 	background-color:#6A97DA;
-	text-align: center; 
+	text-align: center;
+	white-space: nowrap;
+}
+
+.li_paleblue a {
+	white-space: nowrap;
 }
 
 .li_paleblue a:link {
