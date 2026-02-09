@@ -459,7 +459,7 @@
 
     <!-- ヒーローセクション -->
     <section class="hero">
-        <h1>生徒様専用ページです！</h1>
+        <h1>生徒様専用ページ！</h1>
         <p>授業予約やお知らせなど、便利な情報をご確認いただけます</p>
     </section>
 
@@ -518,7 +518,7 @@
                     </div>
                 </a>
                 
-                <a href="https://calendar.google.com/calendar/u/0?cid=ZTkyZjQ1MDg0YzkxYzMxN2RiMWIxZDRmMTdjYWU4ZmI0MjdiMDZkMWQ0NTY3MzUwMGFjNDVlN2RiYmI4YTk4Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t" class="menu-card" target="_blank">
+                <a href="#calendar" class="menu-card">
                     <div class="menu-header menu-red">
                         教室カレンダー
                     </div>
@@ -702,6 +702,22 @@
         </div>
     </section>
 
+    <!-- 教室カレンダー -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title" id="calendar">教室カレンダー</h2>
+            <div class="content-box">
+                <p style="margin-bottom: var(--spacing-md);">営業日・休業日をご確認いただけます。</p>
+                <div style="position: relative; width: 100%; padding-bottom: 75%; height: 0; overflow: hidden; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+                    <iframe src="https://calendar.google.com/calendar/embed?src=ZTkyZjQ1MDg0YzkxYzMxN2RiMWIxZDRmMTdjYWU4ZmI0MjdiMDZkMWQ0NTY3MzUwMGFjNDVlN2RiYmI4YTk4Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" frameborder="0" scrolling="no"></iframe>
+                </div>
+                <p style="margin-top: var(--spacing-md); text-align: center;">
+                    <a href="https://calendar.google.com/calendar/u/0?cid=ZTkyZjQ1MDg0YzkxYzMxN2RiMWIxZDRmMTdjYWU4ZmI0MjdiMDZkMWQ0NTY3MzUwMGFjNDVlN2RiYmI4YTk4Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t" target="_blank" rel="noopener noreferrer" style="color: var(--primary-red); font-weight: 600;">Googleカレンダーで開く →</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
     <!-- フッター -->
     <footer class="footer">
         <div class="footer-content">
@@ -717,6 +733,8 @@
                 <a href="#message">メッセージ</a>
                 <span style="opacity: 0.3;">|</span>
                 <a href="#line">LINE公式</a>
+                <span style="opacity: 0.3;">|</span>
+                <a href="#calendar">教室カレンダー</a>
                 <span style="opacity: 0.3;">|</span>
                 <a href="http://ameblo.jp/curio-kikukawa/" target="_blank">ブログ</a>
             </div>
