@@ -20,25 +20,17 @@
         :root {
             /* カラーパレット - 元の色に不透明度70% */
             --primary-orange: rgba(255, 140, 0, 0.7);
-            --primary-orange-light: rgba(255, 165, 79, 0.7);
             --primary-orange-dark: rgba(230, 126, 0, 0.7);
             --primary-red: rgba(220, 20, 60, 0.7);
-            --primary-red-light: rgba(240, 80, 100, 0.7);
             --primary-red-dark: rgba(200, 0, 40, 0.7);
             --primary-green: rgba(34, 139, 34, 0.7);
-            --primary-green-light: rgba(60, 179, 113, 0.7);
             --primary-green-dark: rgba(0, 100, 0, 0.7);
             --primary-blue: rgba(30, 144, 255, 0.7);
-            --primary-blue-light: rgba(100, 180, 255, 0.7);
             --primary-blue-dark: rgba(0, 100, 200, 0.7);
             --primary-yellow: rgba(255, 215, 0, 0.7);
-            --primary-yellow-light: rgba(255, 235, 80, 0.7);
-            --primary-yellow-dark: rgba(218, 165, 32, 0.7);
             --primary-paleblue: rgba(176, 224, 230, 0.7);
-            --primary-paleblue-light: rgba(200, 235, 240, 0.7);
             --primary-paleblue-dark: rgba(135, 206, 235, 0.7);
             --primary-line: rgba(0, 195, 0, 0.7);
-            --primary-line-light: rgba(60, 220, 60, 0.7);
             --primary-line-dark: rgba(0, 150, 0, 0.7);
             --text-dark: #3A3A3A;
             --text-gray: #6B6B6B;
@@ -117,21 +109,6 @@
             line-height: 1.2;
         }
 
-        .logo-sub {
-            font-size: 0.75rem;
-            opacity: 0.9;
-            font-weight: 400;
-        }
-
-        .header-badge {
-            background: white;
-            color: var(--primary-green);
-            padding: var(--spacing-xs) var(--spacing-md);
-            border-radius: var(--radius-full);
-            font-weight: 700;
-            font-size: 0.9rem;
-        }
-
         /* ヒーローセクション */
         .hero {
             background: linear-gradient(135deg, rgba(34, 139, 34, 0.05) 0%, rgba(0, 100, 0, 0.05) 100%);
@@ -163,8 +140,6 @@
             text-align: center;
             margin-bottom: var(--spacing-sm);
             color: var(--text-dark);
-            position: relative;
-            padding-bottom: var(--spacing-xs);
         }
 
         /* メニューグリッド */
@@ -417,10 +392,6 @@
                 font-size: 1.1rem;
             }
 
-            .hero h1 {
-                font-size: 1.6rem;
-            }
-
             .hero p {
                 font-size: 1rem;
             }
@@ -435,14 +406,6 @@
         }
 
         /* ユーティリティ */
-        .mb-lg {
-            margin-bottom: var(--spacing-lg);
-        }
-
-        .mt-lg {
-            margin-top: var(--spacing-lg);
-        }
-
         .text-center {
             text-align: center;
         }
