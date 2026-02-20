@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>生徒様専用ページ | キュリオステーション菊川店</title>
-    
+
     <meta name="description" content="キュリオステーション菊川店の生徒様専用ページです。授業予約、お知らせ、教室からのメッセージなどをご確認いただけます。">
     <meta name="robots" content="noindex, nofollow">
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
     <style>
         :root {
             /* カラーパレット - 元の色に不透明度70% */
@@ -43,36 +45,36 @@
             --bg-white: #FFFFFF;
             --bg-light: #F8F8F8;
             --border-light: #E0E0E0;
-            
+
             /* タイポグラフィ */
             --font-display: 'Zen Maru Gothic', 'BIZ UDPGothic', 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
             --font-body: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
-            
+
             /* スペーシング */
             --spacing-xs: 0.5rem;
             --spacing-sm: 1rem;
             --spacing-md: 1.5rem;
             --spacing-lg: 2.5rem;
             --spacing-xl: 4rem;
-            
+
             /* ボーダー半径 */
             --radius-sm: 8px;
             --radius-md: 16px;
             --radius-lg: 24px;
             --radius-full: 9999px;
-            
+
             /* シャドウ */
             --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
             --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
             --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.16);
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: var(--font-body);
             color: var(--text-dark);
@@ -80,7 +82,7 @@
             background: var(--bg-white);
             overflow-x: hidden;
         }
-        
+
         /* ヘッダー */
         .header {
             background: linear-gradient(135deg, var(--primary-green) 0%, var(--primary-green-dark) 100%);
@@ -91,7 +93,7 @@
             z-index: 1000;
             box-shadow: var(--shadow-md);
         }
-        
+
         .header-container {
             max-width: 1200px;
             margin: 0 auto;
@@ -101,26 +103,26 @@
             align-items: center;
             gap: var(--spacing-md);
         }
-        
+
         .logo-area {
             display: flex;
             align-items: center;
             gap: var(--spacing-md);
         }
-        
+
         .logo-text {
             font-family: var(--font-display);
             font-size: 1.3rem;
             font-weight: 900;
             line-height: 1.2;
         }
-        
+
         .logo-sub {
             font-size: 0.75rem;
             opacity: 0.9;
             font-weight: 400;
         }
-        
+
         .header-badge {
             background: white;
             color: var(--primary-green);
@@ -129,7 +131,7 @@
             font-weight: 700;
             font-size: 0.9rem;
         }
-        
+
         /* ヒーローセクション */
         .hero {
             background: linear-gradient(135deg, rgba(34, 139, 34, 0.05) 0%, rgba(0, 100, 0, 0.05) 100%);
@@ -137,7 +139,7 @@
             text-align: center;
             border-bottom: 1px solid var(--border-light);
         }
-        
+
         .hero h1 {
             font-family: var(--font-display);
             font-size: 2rem;
@@ -145,23 +147,23 @@
             margin-bottom: var(--spacing-sm);
             color: var(--text-dark);
         }
-        
+
         .hero p {
             font-size: 1.1rem;
             color: var(--text-gray);
         }
-        
+
         /* メインコンテンツ */
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 var(--spacing-md);
         }
-        
+
         .section {
             padding: var(--spacing-xl) 0;
         }
-        
+
         .section-title {
             font-family: var(--font-display);
             font-size: 2rem;
@@ -172,7 +174,7 @@
             position: relative;
             padding-bottom: var(--spacing-md);
         }
-        
+
         .section-title::after {
             content: '';
             position: absolute;
@@ -184,7 +186,7 @@
             background: linear-gradient(90deg, var(--primary-green) 0%, var(--primary-paleblue) 100%);
             border-radius: 2px;
         }
-        
+
         /* メニューグリッド */
         .menu-grid {
             display: grid;
@@ -192,7 +194,7 @@
             gap: var(--spacing-md);
             margin-bottom: var(--spacing-xl);
         }
-        
+
         .menu-card {
             background: white;
             border-radius: var(--radius-lg);
@@ -204,12 +206,12 @@
             display: flex;
             flex-direction: column;
         }
-        
+
         .menu-card:hover {
             transform: translateY(-8px);
             box-shadow: var(--shadow-lg);
         }
-        
+
         .menu-header {
             padding: var(--spacing-md);
             color: white;
@@ -218,14 +220,31 @@
             font-size: 1.2rem;
             letter-spacing: 0.05em;
         }
-        
-        .menu-green { background: linear-gradient(135deg, var(--primary-green) 0%, var(--primary-green-dark) 100%); }
-        .menu-orange { background: linear-gradient(135deg, var(--primary-orange) 0%, var(--primary-orange-dark) 100%); }
-        .menu-blue { background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%); }
-        .menu-red { background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-red-dark) 100%); }
-        .menu-paleblue { background: linear-gradient(135deg, var(--primary-paleblue) 0%, var(--primary-paleblue-dark) 100%); }
-        .menu-line { background: linear-gradient(135deg, var(--primary-line) 0%, var(--primary-line-dark) 100%); }
-        
+
+        .menu-green {
+            background: linear-gradient(135deg, var(--primary-green) 0%, var(--primary-green-dark) 100%);
+        }
+
+        .menu-orange {
+            background: linear-gradient(135deg, var(--primary-orange) 0%, var(--primary-orange-dark) 100%);
+        }
+
+        .menu-blue {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
+        }
+
+        .menu-red {
+            background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-red-dark) 100%);
+        }
+
+        .menu-paleblue {
+            background: linear-gradient(135deg, var(--primary-paleblue) 0%, var(--primary-paleblue-dark) 100%);
+        }
+
+        .menu-line {
+            background: linear-gradient(135deg, var(--primary-line) 0%, var(--primary-line-dark) 100%);
+        }
+
         .menu-body {
             padding: var(--spacing-md);
             flex: 1;
@@ -235,18 +254,18 @@
             justify-content: center;
             text-align: center;
         }
-        
+
         .menu-icon {
             font-size: 3rem;
             margin-bottom: var(--spacing-sm);
         }
-        
+
         .menu-body p {
             color: var(--text-gray);
             font-size: 0.95rem;
             line-height: 1.6;
         }
-        
+
         /* コンテンツボックス */
         .content-box {
             background: white;
@@ -255,7 +274,7 @@
             box-shadow: var(--shadow-sm);
             margin-bottom: var(--spacing-lg);
         }
-        
+
         .content-box h3 {
             font-family: var(--font-display);
             font-size: 1.4rem;
@@ -265,22 +284,22 @@
             padding-bottom: var(--spacing-sm);
             border-bottom: 2px solid var(--border-light);
         }
-        
+
         .content-box p {
             margin-bottom: var(--spacing-sm);
             line-height: 1.8;
         }
-        
+
         .content-box ul {
             margin-left: var(--spacing-md);
             margin-bottom: var(--spacing-sm);
         }
-        
+
         .content-box li {
             margin-bottom: var(--spacing-xs);
             line-height: 1.8;
         }
-        
+
         .highlight-box {
             background: rgba(255, 215, 0, 0.1);
             border-left: 4px solid var(--primary-yellow);
@@ -288,7 +307,7 @@
             margin: var(--spacing-md) 0;
             border-radius: var(--radius-sm);
         }
-        
+
         .warning-box {
             background: rgba(220, 20, 60, 0.05);
             border-left: 4px solid var(--primary-red);
@@ -296,7 +315,7 @@
             margin: var(--spacing-md) 0;
             border-radius: var(--radius-sm);
         }
-        
+
         .info-box {
             background: rgba(30, 144, 255, 0.05);
             border-left: 4px solid var(--primary-blue);
@@ -304,7 +323,7 @@
             margin: var(--spacing-md) 0;
             border-radius: var(--radius-sm);
         }
-        
+
         /* 店長メッセージ */
         .message-section {
             background: white;
@@ -316,13 +335,13 @@
             gap: var(--spacing-xl);
             align-items: start;
         }
-        
+
         .message-image {
             width: 100%;
             border-radius: var(--radius-md);
             box-shadow: var(--shadow-sm);
         }
-        
+
         /* LINE登録セクション */
         .line-section {
             background: linear-gradient(135deg, rgba(0, 195, 0, 0.05) 0%, rgba(0, 150, 0, 0.05) 100%);
@@ -330,19 +349,19 @@
             padding: var(--spacing-xl);
             text-align: center;
         }
-        
+
         .line-qr {
             max-width: 200px;
             margin: var(--spacing-md) auto;
             border-radius: var(--radius-md);
             box-shadow: var(--shadow-sm);
         }
-        
+
         .line-button {
             display: inline-block;
             margin-top: var(--spacing-md);
         }
-        
+
         /* 時間割 */
         .timetable-image {
             max-width: 100%;
@@ -351,7 +370,7 @@
             box-shadow: var(--shadow-md);
             margin: var(--spacing-md) 0;
         }
-        
+
         /* フッター */
         .footer {
             background: var(--text-dark);
@@ -359,14 +378,14 @@
             padding: var(--spacing-lg) 0;
             margin-top: var(--spacing-xl);
         }
-        
+
         .footer-content {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 var(--spacing-md);
             text-align: center;
         }
-        
+
         .footer-links {
             display: flex;
             justify-content: center;
@@ -374,81 +393,89 @@
             gap: var(--spacing-md);
             margin-bottom: var(--spacing-md);
         }
-        
+
         .footer-links a {
             color: white;
             text-decoration: none;
             opacity: 0.8;
             transition: opacity 0.3s ease;
         }
-        
+
         .footer-links a:hover {
             opacity: 1;
         }
-        
+
         .footer-copy {
             opacity: 0.6;
             font-size: 0.9rem;
         }
-        
+
         /* レスポンシブ */
         @media (max-width: 968px) {
             .menu-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
-            
+
             .message-section {
                 grid-template-columns: 1fr;
                 gap: var(--spacing-md);
             }
-            
+
             .message-image {
                 max-width: 200px;
                 margin: 0 auto;
             }
         }
-        
+
         @media (max-width: 640px) {
             .header-container {
                 flex-direction: column;
                 gap: var(--spacing-sm);
             }
-            
+
             .logo-text {
                 font-size: 1.1rem;
             }
-            
+
             .hero h1 {
                 font-size: 1.6rem;
             }
-            
+
             .hero p {
                 font-size: 1rem;
             }
-            
+
             .section-title {
                 font-size: 1.6rem;
             }
-            
+
             .menu-grid {
                 grid-template-columns: 1fr;
             }
         }
-        
+
         /* ユーティリティ */
-        .mb-lg { margin-bottom: var(--spacing-lg); }
-        .mt-lg { margin-top: var(--spacing-lg); }
-        .text-center { text-align: center; }
+        .mb-lg {
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .mt-lg {
+            margin-top: var(--spacing-lg);
+        }
+
+        .text-center {
+            text-align: center;
+        }
     </style>
 </head>
+
 <body>
     <!-- ヘッダー -->
     <header class="header">
         <div class="header-container">
             <div class="logo-area">
                 <div class="logo-text">
-                    キュリオステーション菊川店
-                    <div class="logo-sub">生徒様専用ページ</div>
+                    教室生徒様ページ
                 </div>
             </div>
             <div class="header-badge">
@@ -459,7 +486,6 @@
 
     <!-- ヒーローセクション -->
     <section class="hero">
-        <h1>生徒様専用ページ！</h1>
         <p>授業予約やお知らせなど、便利な情報をご確認いただけます</p>
     </section>
 
@@ -477,7 +503,7 @@
                         <p>空き状況の確認と<br>授業の予約を行えます</p>
                     </div>
                 </a>
-                
+
                 <a href="#information" class="menu-card">
                     <div class="menu-header menu-orange">
                         各種お知らせ
@@ -487,7 +513,7 @@
                         <p>各月のイベント情報や<br>教室からの連絡事項</p>
                     </div>
                 </a>
-                
+
                 <a href="#learning_style" class="menu-card">
                     <div class="menu-header menu-blue">
                         学びかた
@@ -497,7 +523,7 @@
                         <p>教室での<br>学び方について</p>
                     </div>
                 </a>
-                
+
                 <a href="#message" class="menu-card">
                     <div class="menu-header menu-paleblue">
                         個別授業やってます！
@@ -507,7 +533,7 @@
                         <p>火、水、金の<br>11時～12時です！</p>
                     </div>
                 </a>
-                
+
                 <a href="#line" class="menu-card">
                     <div class="menu-header menu-line">
                         LINE公式
@@ -517,8 +543,9 @@
                         <p>教室からのお知らせを<br>受け取れます</p>
                     </div>
                 </a>
-                
-                <a href="https://calendar.google.com/calendar/embed?src=e92f45084c91c317db1b1d4f17cae8fb427b06d1d45673500ac45e7dbbb8a98c%40group.calendar.google.com&ctz=Asia%2FTokyo" class="menu-card" target="_blank">
+
+                <a href="https://calendar.google.com/calendar/embed?src=e92f45084c91c317db1b1d4f17cae8fb427b06d1d45673500ac45e7dbbb8a98c%40group.calendar.google.com&ctz=Asia%2FTokyo"
+                    class="menu-card" target="_blank">
                     <div class="menu-header menu-red">
                         教室カレンダー
                     </div>
@@ -538,7 +565,8 @@
             <div class="content-box">
                 <div class="highlight-box">
                     <p style="text-align: center; font-size: 1.1rem; font-weight: 700;">
-                        <a href="https://airrsv.net/curio-kikukawa/calendar" style="color: var(--primary-green); text-decoration: none;">
+                        <a href="https://airrsv.net/curio-kikukawa/calendar"
+                            style="color: var(--primary-green); text-decoration: none;">
                             📅 通常授業のご予約はこちらから →
                         </a>
                     </p>
@@ -548,7 +576,8 @@
                 </div>
                 <div class="highlight-box">
                     <p style="text-align: center; font-size: 1.1rem; font-weight: 700;">
-                        <a href="https://airrsv.net/kobetsujugyo/calendar" style="color: var(--primary-green); text-decoration: none;">
+                        <a href="https://airrsv.net/kobetsujugyo/calendar"
+                            style="color: var(--primary-green); text-decoration: none;">
                             📅 個別授業のご予約はこちらから →
                         </a>
                     </p>
@@ -558,7 +587,8 @@
                 </div>
                 <div class="highlight-box">
                     <p style="text-align: center; font-size: 1.1rem; font-weight: 700;">
-                        <a href="https://airrsv.net/Lifedesign/calendar" style="color: var(--primary-green); text-decoration: none;">
+                        <a href="https://airrsv.net/Lifedesign/calendar"
+                            style="color: var(--primary-green); text-decoration: none;">
                             📅 自習室のご予約はこちらから →
                         </a>
                     </p>
@@ -590,11 +620,11 @@
     <section class="section" style="background: var(--bg-light);">
         <div class="container">
             <h2 class="section-title" id="learning_style">教室での学び方につきまして</h2>
-            
+
             <div class="content-box">
                 <h3>学び方その① 完全予約制の授業</h3>
                 <p>完全予約制の1コマ60分：4名での授業とし、当日のご予約状況を考慮したうえで55分の延長を行います。</p>
-                
+
                 <div class="warning-box">
                     <p><strong>延長に関するルール</strong></p>
                     <ul>
@@ -604,44 +634,48 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="content-box">
                 <h3>学び方その② リモート学習について</h3>
                 <p>コロナ以降、リモート学習にもご対応するようにいたしました。基本的にはテキストを中心とした学習になります。</p>
-                <p>リモートによる質疑の場合は、こちらで皆さんのパソコンの画面を拝見させていただく画面共有を行うことで、より詳細なアドバイスを差し上げることが可能となります。ご興味がある方は、矢野に電話やメールをください。</p>
+                <p>リモートによる質疑の場合は、こちらで皆さんのパソコンの画面を拝見させていただく画面共有を行うことで、より詳細なアドバイスを差し上げることが可能となります。ご興味がある方は、矢野に電話やメールをください。
+                </p>
             </div>
-            
+
             <div class="content-box">
                 <h3>学び方その③ Lifedesignスペース（自習スペース）</h3>
                 <p>自習スペースとなります。</p>
-                
+
                 <ul>
                     <li>システムからのご予約で1時間利用することができます。次の時間のご予約がない場合は延長（55分）が可能です。</li>
                     <li>パソコンの学習もできますし、教室以外の学習のものでもOK、読書もOK。ただし、質問等はできません。</li>
                     <li>音を立てる、匂いがする、極端によごれる、仮眠するなどでなければどのように利用してもらってもOKのスペースです。</li>
                     <li>リモートルームとしても利用できるようにしましたので、ご利用希望の方はお声をおかけください。</li>
                 </ul>
-                
+
                 <div class="info-box">
                     <p><strong>名前の由来：</strong>『学ぶことは、よりよい暮らしをデザインする』と考えているので、学ぶ（= Life designをする）スペースと名付けました。</p>
                 </div>
             </div>
-            
+
             <div class="content-box">
                 <h3>時間割</h3>
                 <div class="text-center">
                     <img src="timetable.jpg" alt="教室の時間割" class="timetable-image">
                 </div>
             </div>
-            
+
             <div class="content-box">
                 <h3>ご予約方法について</h3>
-                <p>ご予約は、予約システムまたは、引き続き電話とホームページからできるようになっております。予約システムは皆さんの利便性を高めるためにあくまでもご用意したものですので、今まで通りの電話でご予約をご希望の方は、いままでどおりのご予約方法をご利用くださいませ。</p>
-                
-                <p>また、すでに予約システムをご利用いただいてのご予約をされていらっしゃる皆様におかれましては、ご面倒なようでしたら、教室のオフィシャルLINEに一度ご登録いただき、予約状況はシステムで確認した後、LINEから授業希望日をメールしていただきますと、ご予約が簡単にできるかと思います。</p>
-                
+                <p>ご予約は、予約システムまたは、引き続き電話とホームページからできるようになっております。予約システムは皆さんの利便性を高めるためにあくまでもご用意したものですので、今まで通りの電話でご予約をご希望の方は、いままでどおりのご予約方法をご利用くださいませ。
+                </p>
+
+                <p>また、すでに予約システムをご利用いただいてのご予約をされていらっしゃる皆様におかれましては、ご面倒なようでしたら、教室のオフィシャルLINEに一度ご登録いただき、予約状況はシステムで確認した後、LINEから授業希望日をメールしていただきますと、ご予約が簡単にできるかと思います。
+                </p>
+
                 <div class="warning-box">
-                    <p><strong>ご注意：</strong>LINEでの空き確認は、授業中や営業時間外の時間にお返事が難しい場合もございます。空き状況を確認してから予約をしたい場合は、お手数ですが、予約システムまたは教室へのお電話にて空き状況を確認してからご予約をお願いいたします。</p>
+                    <p><strong>ご注意：</strong>LINEでの空き確認は、授業中や営業時間外の時間にお返事が難しい場合もございます。空き状況を確認してから予約をしたい場合は、お手数ですが、予約システムまたは教室へのお電話にて空き状況を確認してからご予約をお願いいたします。
+                    </p>
                 </div>
             </div>
         </div>
@@ -655,11 +689,11 @@
                 <img src="images/yano.jpg" alt="店長 矢野" class="message-image">
                 <div>
                     <p>今年より火曜、水曜、金曜の11時～12時の個別授業を開講いたしました！</p>
-                    
+
                     <p>マンツーマンの授業で1回4,400円となりますが、当月の教室のご利用が1回のみの場合は、費用は発生いたしません！</p>
-                    
+
                     <p>コンスタントに通うのが難しい月や集中的に質問をしたいという際にぜひご利用いただければと思います。</p>
-                    
+
                     <p style="margin-top: var(--spacing-md); font-weight: 700;">ご予約、お待ちしております！</p>
                 </div>
             </div>
@@ -671,30 +705,32 @@
         <div class="container">
             <h2 class="section-title" id="line">LINE公式アカウント</h2>
             <div class="line-section">
-                <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: var(--spacing-md); color: var(--primary-line);">
+                <h3
+                    style="font-size: 1.4rem; font-weight: 700; margin-bottom: var(--spacing-md); color: var(--primary-line);">
                     教室のオフィシャルLINEの登録をよろしくお願い致します！
                 </h3>
-                
+
                 <p style="margin-bottom: var(--spacing-md);">
                     突然の場合でもご連絡ができますよう、ぜひスマートフォンをお持ちで、LINEをやってらっしゃる方がおりましたら、当教室のオフィシャルLINEの登録をよろしくお願い致します！
                 </p>
-                
+
                 <p style="margin-bottom: var(--spacing-md);">
                     教室公式アカウントのQRコードの画像を下記ご用意いたしましたので、ご利用ください。また、登録の仕方がわからない方は、ご連絡いただければ、メールにてお応えいたします！
                 </p>
-                
+
                 <img src="images/L.png" alt="LINE登録QRコード" class="line-qr">
-                
+
                 <p style="font-size: 0.9rem; color: var(--text-gray); margin-bottom: var(--spacing-md);">
                     ↑パソコンからご覧の方は上記QRコードでの登録が便利です！
                 </p>
-                
+
                 <div class="line-button">
                     <a href="https://lin.ee/qiyCj3T" target="_blank">
-                        <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" border="0">
+                        <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36"
+                            border="0">
                     </a>
                 </div>
-                
+
                 <p style="font-size: 0.9rem; color: var(--text-gray); margin-top: var(--spacing-sm);">
                     ↑スマホでご覧の方は、こちらの友達追加ボタンをタッチすると、LINEに登録ができます！
                 </p>
@@ -724,4 +760,5 @@
         </div>
     </footer>
 </body>
+
 </html>
